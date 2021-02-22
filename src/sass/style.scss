@@ -1,0 +1,40 @@
+@import '../css/bootstrap-grid.min.css';
+@import '../css/bootstrap-reboot.min.css';
+@import 'libs/animate';
+@import 'libs/font';
+@import 'base/variables';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+svg path {
+    stroke:inherit;
+    stroke-width:inherit;
+    fill:inherit;
+    }
+body {
+    background-color: $main-color;
+}
+
+.container {
+    position: relative;
+    max-width: 1224px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/promo';
+@import 'blocks/titles';
+@import 'blocks/subtitles';
+@import 'blocks/tools';
+@import 'blocks/trust';
+@import 'blocks/newcomer';
+@import 'blocks/slider';
+@import 'blocks/become';
+@import 'blocks/footer';
+@import 'blocks/pageup';
+@import 'blocks/hamburger';
+
+@import 'base/media';

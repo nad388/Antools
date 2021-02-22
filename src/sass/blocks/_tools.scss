@@ -1,0 +1,65 @@
+.tools {
+    min-height: 1109px;
+    margin-top: 200px;
+    &__item {
+        width: 392px;
+        margin-top: 90px;
+        padding: 33px;
+        border-radius: 15px;
+        &:hover {
+            background: radial-gradient(ellipse closest-corner at 85% 15%, rgba(249,117,5,0.159) 5%, rgba(40,48,54,0.55) 95%);
+            backdrop-filter: blur(50px);
+            box-shadow: inset -1px 3px 22px -12px rgba(249,117,5,0.55);
+        }
+    }
+    &__block-main {
+        display: flex;
+        justify-content: start;
+    }
+    &__block-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: rgba(255, 255, 255, 0.78);
+        margin-left: 30px;
+    }
+    &__block-status {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: rgba(255, 165, 55, 0.55);
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: rgba(255, 255, 255, 0.55);
+        margin-top: 30px;
+        &_small {
+            font-size: 14px;
+        }
+    }
+    &__group-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .like-group img {
+        padding: 7px;
+        &:hover {
+            border-radius: 10px;
+        }
+    }  
+    .heart {
+        margin: 0 15px 3px 0;
+        &:hover, &:active {
+            background: url(../icons/heart_hover.svg) center no-repeat rgba(28, 30, 36, 0.6);
+        }
+    }
+    .folder {
+        &:hover {
+            background: rgba(28, 30, 36, 0.6);
+        }
+    }  
+}

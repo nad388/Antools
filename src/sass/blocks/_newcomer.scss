@@ -1,0 +1,27 @@
+.newcomer {
+    min-height: 638px;
+    margin-top: 200px;
+    .tools__item {
+        &_small {
+            width: 288px;
+            margin-top: 0;
+        }
+    }
+    .like-group img {
+        padding: 7px;
+        &:hover {
+            border-radius: 10px;
+        }
+    }
+    .heart {
+        margin: 0 15px 3px 0;
+        &:hover, &:active {
+            background: url(../icons/heart_hover.svg) center no-repeat rgba(28, 30, 36, 0.6);
+        }
+    }
+    .folder {
+        &:hover {
+            background: rgba(28, 30, 36, 0.6);
+        }
+    }
+}

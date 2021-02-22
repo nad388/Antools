@@ -1,0 +1,168 @@
+@media (max-width:  1200px) {
+    .slider {
+        .arrows {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:  991px) {
+    .title {
+        font-size: 40px;
+    }
+    .header__login {
+        display: block;
+        margin: 30px 30px;
+    }
+    .promo {
+        img {
+            display: none;
+        }
+        text-align: center;
+        .btn__search {
+            top: 150px;
+            right: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__main {
+            width: 100%;
+        }
+        .fa {
+            margin: 0 auto;
+        }
+    }
+    .newcomer {
+        text-align: center;
+        #none {
+            display: none;
+        }
+        .btn__big {
+            margin-bottom: 30px;
+        }
+    }
+    .slider {
+
+        .slide {
+            margin: 0 auto;
+            &__txt_text {
+                padding-right: 20px;
+                width: 250px;
+            }
+        }
+        &__line {
+            margin-top: 20px;
+        }
+    }
+    .become {
+        .btn__search {
+            top: 150px;
+            right: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .footer {
+        text-align: center;
+        &__info, &__categories {
+            margin-top: 40px;
+        }
+    }
+}
+@media (max-width:  767px) {
+    .header {
+        &__wrapper {
+            .hamburger-menu {
+                display: block;
+            }
+        }
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    #menu__toggle {
+        display: none;
+    }
+    .promo {
+        .btn__search {
+            right: 130px;
+        }
+    }
+    .tools {
+        &__item {
+            margin: 0 15%;
+        }
+    }
+    .newcomer {
+        margin-top: 100px;
+    }
+    .slider {
+        display: none;
+    }
+    .become {
+        margin-top: 50px;
+    }
+    .footer {
+        margin-top: 140px;
+    }
+}
+@media (max-width:  575px) {
+    .header {
+        &__logo {
+            margin: 20px auto;
+        }
+    }
+    .btn {
+        width: 100px;
+    }
+    .tools {
+        margin-top: 100px;
+        &__item {
+            width: 100%;
+            margin: 10px 0;
+        }
+        .btn__load {
+            margin: 20px auto;
+        }
+    }
+    .trust {
+        text-align: center;
+        .title__small {
+            font-size: 24px;
+        }
+    }
+    .newcomer {
+        text-align: center;
+         .tools__item {
+            width: 100%;
+        }
+    }
+    .promo {
+        .title__main {
+            margin-top: 5px;
+        }
+        .search {
+            width: 300px;
+        }
+        .fa {
+            margin-left: 10px;
+        }
+    }
+    .become {
+        .search {
+            width: 300px;
+        }
+    }
+    .footer {
+        text-align: center;
+        &__item {
+            
+            &__contact {
+                margin-top: 20px;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,49 @@
+.btn {
+    width: 118px;
+    height: 48px;
+    background-color: $orange-color;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FDF5FF;
+    &__search {
+        width: 130.43px;
+    }
+    &:hover {
+        box-shadow: 0 0 5px rgba(250,250,250,0.5);
+    }
+    &__nocolor {
+        width: 106px;
+        height: 42px;
+        border: none;
+        background: none;   
+        color: rgba(255, 255, 255, 0.55);
+        &:hover, &:active {
+            background-color: $orange-color;
+            color: #ffffff;
+        }
+    }
+    &__load {
+        display: block;
+        width: 184px;
+        height: 64px;
+        background: #1E252B;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+        font-weight: 400;
+        font-size: 20px;
+        color:$orange-color;
+        margin: 100px auto;
+    }
+
+    &__big {
+        width: 198px;
+        height: 58px;
+        margin-top: 60px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+}

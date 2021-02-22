@@ -1,0 +1,28 @@
+.become {
+    margin-top: 250px;
+    text-align: center;
+    .subtitle {
+        margin-top: 25px;
+    }
+    .search {
+        margin-top: 60px;
+        width: 497.66px;
+        min-height: 64px;
+        background: #283036;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 0 1px 0 rgba(250,250,250,0.5);
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.38);
+        padding-left: 24.18px;
+    }
+    .search__block {
+        position: relative;
+    }
+    .btn__search {
+        position: absolute;
+        top: 68px;
+        left: 705px;
+    }
+}

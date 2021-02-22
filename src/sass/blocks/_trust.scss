@@ -1,0 +1,14 @@
+.trust {
+    min-height: 253px;
+    margin-top: 140px;
+    &__tools {
+        padding: 55px 83px;
+            &:hover {
+            //background: rgba(44, 53, 61, 0.2);
+            background: radial-gradient(ellipse closest-corner at 5% 20%, rgba(255,72,66,0.159) 5%, rgba(40,48,54,0.55) 95%);
+            backdrop-filter: blur(50px);
+            border-radius: 25px;
+            box-shadow: inset -1px 3px 22px -12px rgba(255,72,66,0.55);
+        }
+    }
+}
