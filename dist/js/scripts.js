@@ -1,38 +1,55 @@
 
 //slider
-let slideIndex = 1;
+let slideIndex = 1,
+    slides = document.querySelectorAll('.slide'),
+    prev = document.querySelector('.prev__btn'),
+    next = document.querySelector('.next__btn'),
+    dotsWrap = document.querySelector('.slider__line'),
+    dots = document.querySelectorAll('.slider__line_item');
+
 showSlides(slideIndex);
 
-function plusSlide() {
-    showSlides(slideIndex += 1);
-}
-function minusSlide() {
-    showSlides(slideIndex -= 1);  
+function showSlides(n) {
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    slides.forEach((item) => item.style.display = 'none');
+    // for (let i = 0; i < slides.length; i++) {
+    //     slides[i].style.display = 'none';
+    // }
+    dots.forEach((item) => item.classList.remove('slider__line_item-active')); //убираем класс актив
+
+    slides[slideIndex - 1].style.display = 'flex';
+    dots[slideIndex - 1].classList.add('slider__line_item-active');
 }
 
+function plusSlides(n) {
+    showSlides(slideIndex += n); 
+}
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("slide");
-    let lines = document.getElementsByClassName("slider__line_item");
-    if (n > slides.length) {
-      slideIndex = 1
+prev.addEventListener('click', function() {
+    plusSlides(-1);
+});
+
+next.addEventListener('click', function() {
+    plusSlides(1);
+});
+
+dotsWrap.addEventListener('click', function(event) { //делегирование событий
+    for (let i = 0; i < dots.length + 1; i++) {
+        if (event.target.classList.contains('slider__line_item') && event.target == dots[i-1]) { //проверка на присутсивие класса, узнаем номер точки
+            currentSlide(i);
+        }
     }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < lines.length; i++) {
-        lines[i].className = lines[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "flex";
-    lines[slideIndex - 1].className += " active";
-}
+});
 
 //pageup
 $(document).ready(function(){
@@ -50,3 +67,4 @@ $(document).ready(function(){
     });
     new WOW().init(); 
 }); 
+
